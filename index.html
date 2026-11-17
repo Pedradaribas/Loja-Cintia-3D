@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Cintia Ribas | Impressão 3D & Personalizados</title>
+<meta name="description" content="Peças em impressão 3D sob encomenda, terços artesanais, canecas e camisas personalizadas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#inicio" class="brand">
+    <!-- 👇 LOGO: salve sua logo como "logo.png" na pasta principal. Sem o arquivo, aparece só o nome. -->
+    <img src="logo.png" alt="Logo Atelier Cintia Ribas" onerror="this.remove()">
+    <span>Atelier <b>Cintia Ribas</b></span>
+  </a>
+  <button class="burger" id="burger" aria-label="Abrir menu">☰</button>
+  <nav id="menu">
+    <a href="#inicio">Início</a>
+    <a href="#produtos">Produtos 3D</a>
+    <a href="#outros">Outros &amp; Personalizados</a>
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ 1. INÍCIO ============ -->
+<section id="inicio" class="view">
+  <div class="wrap hero">
+    <div>
+      <span class="tag">Maker Boutique · feito à mão, pensado no detalhe</span>
+      <h1>Precisão da <em>impressão 3D</em>.<br>Calor do <em>feito à mão</em>.</h1>
+      <p>Peças 3D sob medida, terços, canecas e camisas personalizadas. Você imagina, o Atelier cria só para você.</p>
+      <div class="actions">
+        <a class="btn" href="#produtos">Ver produtos 3D</a>
+        <a class="btn ghost" href="#outros">Pedir personalizado</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <!-- 👇 FOTO DE DESTAQUE: salve em img/hero.jpg -->
+      <div class="photo"><img src="imagens/hero.jpg" alt="Destaque do ateliê" onerror="this.remove()"></div>
+      <span class="stamp">Sob medida ✦</span>
+    </div>
+  </div>
+
+  <div class="wrap feats">
+    <div class="feat"><b>01</b><h3>Peças 3D sob encomenda</h3><p>Do catálogo ou do seu projeto, em PLA ou PETG.</p></div>
+    <div class="feat"><b>02</b><h3>Presentes personalizados</h3><p>Nome, estampa, mensagem: tudo do seu jeito.</p></div>
+    <div class="feat"><b>03</b><h3>Envio e retirada</h3><p>Combinamos pelo WhatsApp a melhor forma de receber.</p></div>
+  </div>
+
+  <div class="wrap blk">
+    <h2>Mais pedidos</h2>
+    <div class="grid asym" id="destaques"></div>
+  </div>
+</section>
+
+<!-- ============ 2. PRODUTOS 3D ============ -->
+<section id="produtos" class="view">
+  <div class="wrap blk">
+    <span class="tag">Carro-chefe</span>
+    <h2>Produtos 3D</h2>
+    <p class="lead">Escolha uma categoria e encomende direto pelo WhatsApp.</p>
+    <div class="filters" id="filtros"></div>
+    <div class="grid" id="grid3d"></div>
+  </div>
+</section>
+
+<!-- ============ 3. OUTROS & PERSONALIZADOS ============ -->
+<section id="outros" class="view">
+  <div class="wrap blk">
+    <div class="cantinho">
+      <span class="tag">Espaço boutique</span>
+      <h2>Cantinho do Artesanato &amp; Personalizados</h2>
+      <p>Trabalhos manuais da Cintia Ribas, feitos com carinho, um a um.</p>
+    </div>
+    <div id="artesanato"></div>
+  </div>
+</section>
+
+<!-- ============ 4. QUEM SOMOS ============ -->
+<section id="quem-somos" class="view">
+  <div class="wrap blk about">
+    <div class="photo tall">
+      <!-- 👇 FOTO DO ATELIÊ / DA CINTIA: salve em imagens/quem-somos.jpg -->
+      <img src="img/quem-somos.jpg" alt="Cintia Ribas no ateliê" onerror="this.remove()">
+    </div>
+    <div>
+      <span class="tag">Nossa história</span>
+      <h2>Tecnologia com mão humana</h2>
+      <!-- ✏️ Troque os textos abaixo pela história real da Cintia -->
+      <p>O Atelier Cintia Ribas nasceu do desejo de unir dois mundos: a precisão da impressão 3D e o cuidado do trabalho manual.</p>
+      <p>Cada peça impressa passa por limpeza, lixa e acabamento fino antes de chegar até você. Cada terço é montado conta por conta, e cada estampa de caneca ou camisa é pensada para ser única.</p>
+      <p>Aqui ninguém compra "mais um produto": você recebe uma peça feita com atenção, do primeiro rascunho à embalagem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. CONTATO ============ -->
+<section id="contato" class="view">
+  <div class="wrap blk contact">
+    <div class="card pad">
+      <span class="tag">Fale com a gente</span>
+      <h2>Vamos conversar?</h2>
+      <a class="btn big js-zap" target="_blank" rel="noopener" href="#">💬 Chamar no WhatsApp</a>
+      <p><a id="insta" target="_blank" rel="noopener" href="#"><b>Instagram →</b> @seu_usuario</a></p>
+      <p><b>Atendimento:</b><br>Seg a Sex, 9h às 18h<br>Sáb, 9h às 13h <!-- ✏️ ajuste seus horários --></p>
+    </div>
+    <form class="card pad" id="orcamento">
+      <h3>Orçamento rápido</h3>
+      <label>Seu nome<input name="nome" required></label>
+      <label>Tipo de pedido
+        <select name="tipo"><option>3D</option><option>Personalizado</option></select>
+      </label>
+      <label>Descreva sua ideia<textarea name="ideia" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Enviar para o WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© <span id="ano"></span> Atelier Cintia Ribas · Feito com tecnologia e carinho</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
